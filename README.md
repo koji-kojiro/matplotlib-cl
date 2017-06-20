@@ -10,13 +10,7 @@ Most pyplot functions are avilable. You can refer to the parameter `plt:*pyplot-
 
 **matplotlib-cl** is depending on both _Python_ and _Matplotlib_. Please confirm both of these are installed on your PC.
 
-On Debian-like systems:
-
-```shell-session
-$ sudo apt-get install python-matplotlib python2.7-dev
-```
-
-Or use `pip` or `easy_install` if availabe.
+On Debian-like systems: `$ sudo apt-get install python-matplotlib python2.7-dev`
 
 **Note: Python3.x is NOT supported.**
 

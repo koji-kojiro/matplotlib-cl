@@ -3,7 +3,7 @@ sudo: required
 
 install:
   - curl -L https://raw.githubusercontent.com/snmsts/roswell/release/scripts/install-for-ci.sh | sh
-  - apt-get install python-matplotlib python2.7-dev
+  - sudo apt-get install python-matplotlib python2.7-dev
 
 env:
   matrix:

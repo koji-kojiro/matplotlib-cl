@@ -1,0 +1,17 @@
+language: common-lisp
+sudo: required
+
+install:
+  - curl -L https://raw.githubusercontent.com/snmsts/roswell/release/scripts/install-for-ci.sh | sh
+  - apt-get install python-matplotlib python2.7-dev
+
+env:
+  matrix:
+    - LISP=sbcl-bin
+    - LISP=ccl-bin
+    - LISP=abcl
+    - LISP=clisp
+    - LISP=ecl
+
+script:
+  - ros -s prove -e '(or (prove:run :matplotlib-cl-test) (uiop:quit -1))'

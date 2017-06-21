@@ -1,5 +1,7 @@
 # matplotlib-cl
 
+[![Build Status](https://travis-ci.org/koji-kojiro/matplotlib-cl.svg?branch=master)](https://travis-ci.org/koji-kojiro/matplotlib-cl)
+
 **matplotlib-cl** is a 2D plotting library for Common Lisp, which provides a simple interface to _Matplotlib_ plotting API.
 
 ## Usage

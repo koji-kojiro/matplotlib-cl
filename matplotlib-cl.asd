@@ -8,7 +8,7 @@
   :author "TANI Kojiro"
   :license "MIT"
   :depends-on (#:cl-ppcre #:alexandria #:burgled-batteries)
-  :components ((:file "matplotlib-cl"))
+  :components ((:module "src" :components ((:file "matplotlib-cl"))))
   :description "A 2D Plotting library for Common Lisp using Matplotlib."
   :long-description
   #.(with-open-file (stream (merge-pathnames
@@ -20,4 +20,5 @@
         (let ((seq (make-array (file-length stream)
                                :element-type 'character
                                :fill-pointer t)))
-          (setf (fill-pointer seq) (read-sequence seq stream)) seq))))
+          (setf (fill-pointer seq) (read-sequence seq stream)) seq)))
+  :in-order-to ((test-op (test-op matplotlib-cl-test))))

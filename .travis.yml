@@ -1,10 +1,9 @@
 language: common-lisp
 sudo: required
 
-install:
+before_install:
   - curl -L https://raw.githubusercontent.com/snmsts/roswell/release/scripts/install-for-ci.sh | sh
-  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then sudo apt-get install python-tk; fi
-  - sudo apt-get install python-matplotlib python2.7-dev
+  - sudo pip install matplotlib
 
 env:
   matrix:

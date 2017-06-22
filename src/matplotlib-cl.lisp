@@ -9,11 +9,11 @@
 (eval-when (:compile-toplevel :load-toplevel :execute)
   (burgled-batteries:startup-python)
   (handler-case
-    (burgled-batteries:run "import matplotlib.pyplot as plt")
+    (burgled-batteries:run* "import matplotlib.pyplot as plt")
     (error () (error "Failed to import `matplotlib`.")))
 
   (mapcar
-    #'burgled-batteries:run
+    #'burgled-batteries:run*
     '("from string import lowercase as lc"
       "l = filter(lambda _: callable(eval('plt.%s' % _)), tuple(dir(plt)))"
       "list_pyplot_functions = lambda: filter(lambda _: _[0] in lc, l)"

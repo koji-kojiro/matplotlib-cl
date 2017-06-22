@@ -6,7 +6,7 @@
 (defvar *t* (loop for x from 0 below 2 by 0.01 collect x))
 (defvar *s* (mapcar (lambda (x) (1+ (sin (* 2 PI x)))) *t*))
 
-(plan 6)
+(plan 11)
 
 (is (plt::pyname-lisp-name "test") "TEST")
 (is (plt::pyname-lisp-name "test_test") "TEST-TEST")

@@ -13,7 +13,6 @@ env:
   matrix:
     - LISP=sbcl-bin
     - LISP=ccl-bin
-    - LISP=ecl
 
 script:
   - ros -s prove -e '(or (prove:run :matplotlib-cl-test) (uiop:quit -1))'

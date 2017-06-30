@@ -1,16 +1,18 @@
 language: common-lisp
-sudo: required
+sudo: false
 
-before_install:
+install:
   - curl -L https://raw.githubusercontent.com/snmsts/roswell/release/scripts/install-for-ci.sh | sh
-  - sudo pip install matplotlib
+  - pip install matplotlib -t ./python
 
 env:
+  global:
+    - PATH=~/.roswell/bin:$PATH
+    - ROSWELL_INSTALL_DIR=$HOME/.roswell  matrix:
+    - PYTHONPATH=$PYTHONPATH:./python
   matrix:
     - LISP=sbcl-bin
     - LISP=ccl-bin
-    - LISP=abcl
-    - LISP=clisp
     - LISP=ecl
 
 script:

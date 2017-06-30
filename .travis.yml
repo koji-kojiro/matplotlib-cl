@@ -8,7 +8,7 @@ install:
 env:
   global:
     - PATH=~/.roswell/bin:$PATH
-    - ROSWELL_INSTALL_DIR=$HOME/.roswell  matrix:
+    - ROSWELL_INSTALL_DIR=$HOME/.roswell
     - PYTHONPATH=$PYTHONPATH:./python
   matrix:
     - LISP=sbcl-bin

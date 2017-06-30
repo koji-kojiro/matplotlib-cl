@@ -1,6 +1,6 @@
 # matplotlib-cl
 
-[![Build Status](https://travis-ci.org/koji-kojiro/matplotlib-cl.svg?branch=master)](https://travis-ci.org/koji-kojiro/matplotlib-cl)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/koji-kojiro/matplotlib-cl/blob/master/LICENSE) [![Build Status](https://travis-ci.org/koji-kojiro/matplotlib-cl.svg?branch=master)](https://travis-ci.org/koji-kojiro/matplotlib-cl)
 
 **matplotlib-cl** is a 2D plotting library for Common Lisp, which provides a simple interface to _Matplotlib_ plotting API.
 
@@ -10,9 +10,13 @@ Most pyplot functions are avilable. You can refer to the parameter `plt:*pyplot-
 
 ## Requirements
 
-**matplotlib-cl** is depending on both _Python_ and _Matplotlib_. Please confirm both of these are installed on your PC.
+**matplotlib-cl** depends on both _Python_ and _Matplotlib_. Please confirm both of these are installed on your PC.
 
-On Debian-like systems: `$ sudo apt-get install python-matplotlib python2.7-dev`
+On Debian-like systems:<br>
+`$ sudo apt-get install python-matplotlib python2.7-dev`
+
+Or use pip:<br>
+`$ sudo pip install matplotlib`
 
 **Note: Python3.x is NOT supported.**
 
@@ -39,7 +43,7 @@ Here is a simple example ported from [_tutorial of Matplotlib_](https://matplotl
 
 ## License
 
-Licensed under [MIT License](LICENSE).
+Licensed under [MIT License](https://github.com/koji-kojiro/matplotlib-cl/blob/master/LICENSE).
 
 ## Author
 

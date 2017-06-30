@@ -1,6 +1,6 @@
 # matplotlib-cl
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/koji-kojiro/matplotlib-cl/blob/master/LICENSE) [![Build Status](https://travis-ci.org/koji-kojiro/matplotlib-cl.svg?branch=master)](https://travis-ci.org/koji-kojiro/matplotlib-cl)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/koji-kojiro/matplotlib-cl/blob/master/LICENSE) [![Build Status](https://travis-ci.org/koji-kojiro/matplotlib-cl.svg?branch=master)](https://travis-ci.org/koji-kojiro/matplotlib-cl) [![Quicklisp dist](http://quickdocs.org/badge/matplotlib-cl.svg)](http://quickdocs.org/matplotlib-cl/)
 
 **matplotlib-cl** is a 2D plotting library for Common Lisp, which provides a simple interface to _Matplotlib_ plotting API.
 
@@ -18,7 +18,7 @@ On Debian-like systems:<br>
 Or use pip:<br>
 `$ sudo pip install matplotlib`
 
-**Note: Python3.x is NOT supported.**
+**Note: Python3.x is NOT supported...**
 
 ## Example
 
